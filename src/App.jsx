@@ -20,6 +20,10 @@ function App() {
       .then(res => res.json())
       .then(data => {
         console.log(data);
+        if (data.acknowledged) {
+          alert("USer Created Successfully!!")
+          form.reset()
+        }
       })
   }
   return (
